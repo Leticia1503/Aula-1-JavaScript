@@ -1,12 +1,38 @@
 <!DOCTYPE html>
      <head>
-
+<meta charset="UTF-8">
     <title>AULA JS</title>
    <link rel ="stylesheet" href ="assents/css/style.css">
     </head>
     <body>  
-      <h1>Exercício 2 - Operadores</h1>
+  <h1>Minha primeira página com JavaScript</h1>
   <div id="resultados"></div>
+
+  <button id="botaoCor">Trocar cor de fundo</button>
+
+  <script>
+    const botao = document.getElementById("botaoCor");
+
+    botao.addEventListener("click", function() {
+      const corAleatoria = "#" + Math.floor(Math.random() * 16777215).toString(16);
+      document.body.style.backgroundColor = corAleatoria;
+    });
+  </script>
+
+  <button id="contador">Clique aqui</button>
+  <p id="resultado">Cliques: 0</p>
+
+  <script>
+    botao = document.getElementById("contador");
+    const resultado = document.getElementById("resultado");
+    let cliques = 0;
+
+    botao.addEventListener("click", function() {
+      cliques++;
+      resultado.textContent = `Cliques: ${cliques}`;
+    });
+  </script>
+
 
   <script src="script.js"></script>
   <script src="assents/js/script.js"></script>
