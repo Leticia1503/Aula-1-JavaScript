@@ -1,0 +1,23 @@
+body{
+background-color: rgb(194, 130, 255);
+font-family: Arial, Helvetica, sans-serif;
+color: #333;
+text-align: center;
+margin-top: 80px;
+}
+
+h1 {
+  color: #0066cc;
+}
+
+#resultados {
+  margin-top: 30px;
+  font-size: 1.2rem;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
